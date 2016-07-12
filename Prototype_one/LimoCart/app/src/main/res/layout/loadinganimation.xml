@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+ <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/city"
+        android:id="@+id/cityblock"
+        android:alpha=".7"/>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/car"
+    android:layout_centerVertical="true"
+    android:layout_alignTop="@+id/cityblock"
+    android:layout_marginTop="125dp"
+    android:id="@+id/car"
+/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/car_1"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/cityblock"
+        android:layout_marginTop="95dp"
+        android:id="@+id/car1"
+        />
+</RelativeLayout>

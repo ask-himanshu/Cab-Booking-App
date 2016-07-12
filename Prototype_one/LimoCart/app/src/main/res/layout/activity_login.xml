@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="one.prototype.aptlegion.limocart.Login"
+    android:background="@drawable/background"
+    >
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="240dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_alignTop="@+id/card_view"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/username"
+            android:inputType="textEmailAddress"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/mail"
+            />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:layout_marginTop="80dp"
+            android:layout_alignTop="@+id/card_view"
+            android:layout_marginLeft="30dp"
+            android:hint="@string/password"
+            android:ems="10"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/passwordicon"
+            android:inputType="textPassword"
+            android:drawableRight="@drawable/visible"
+            android:longClickable="false"
+            />
+
+        <!-- <Button
+             android:layout_width="70dp"
+             android:layout_height="40dp"
+             android:text="@string/loginbutton"
+             android:layout_marginTop="130dp"
+             android:layout_marginLeft="30dp"
+             android:id="@+id/button"
+             android:layout_alignBottom="@+id/card_view"
+             android:layout_alignLeft="@+id/card_view"
+             android:layout_alignStart="@+id/card_view"
+             android:elevation="10dp"
+             android:onClick="login"
+             android:background="@drawable/button"
+             android:textColor="?attr/colorPrimary"
+         />-->
+        <com.dd.processbutton.iml.ActionProcessButton
+            android:id="@+id/btnSignIn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:text="Sign in"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="75dp"
+            android:layout_alignBottom="@+id/card_view"
+            android:layout_alignLeft="@+id/card_view"
+            android:layout_alignStart="@+id/card_view"
+            android:onClick="login"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget"
+            android:id="@+id/textView2"
+            android:onClick="forget"
+            android:clickable="true"
+            android:layout_marginTop="186dp"
+            android:layout_marginLeft="160dp"
+            android:layout_alignBottom="@+id/card_view"
+            android:layout_alignLeft="@+id/card_view"
+            android:layout_alignStart="@+id/card_view"
+            android:textStyle="italic"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remeberme"
+            android:id="@+id/checkBox"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="180dp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/card_view"
+            android:layout_alignStart="@+id/card_view"
+            android:checked="true"/>
+
+    </android.support.v7.widget.CardView>
+
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Limo Cart"
+        android:layout_marginTop="60dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo"
+        />-->
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/guest"
+        android:textSize="20dp"
+        android:background="@drawable/login_button"
+        android:layout_marginTop="20dp"
+        android:textColor="?attr/colorPrimary"
+        android:id="@+id/button2"
+        android:elevation="10dp"
+        android:layout_below="@+id/card_view"
+        android:layout_centerHorizontal="true"
+        android:onClick="guest"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/register"
+        android:textSize="20dp"
+        android:background="@drawable/login_button"
+        android:layout_marginTop="120dp"
+        android:textColor="?attr/colorPrimary"
+        android:id="@+id/button3"
+        android:elevation="10dp"
+        android:layout_below="@+id/card_view"
+        android:layout_centerHorizontal="true"
+        android:onClick="register"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,227 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/map"
+    tools:context="com.example.pragadeeswaran.tabex.MapsActivity"
+    android:name="com.androidmapextension.GoogleMap />-->
+    <FrameLayout
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+       <!--<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#0D47A1"
+            android:id="@+id/imageView"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/radioGroup">
+
+             <RadioButton
+                  android:layout_width="40dp"
+                  android:layout_height="40dp"
+                  android:background="@drawable/car_segment"
+                  android:layout_alignParentLeft="true"
+                  android:layout_marginBottom="20dp"
+                  android:layout_marginLeft="42dp"
+                  android:button="@null"
+                  android:id="@+id/mini"
+                  android:elevation="10dp"
+                 />
+            <RadioButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/car_segment"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="82dp"
+                android:button="@null"
+                android:id="@+id/sedan"
+                android:elevation="10dp"
+                />
+            <RadioButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/car_segment"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="82dp"
+                android:button="@null"
+                android:id="@+id/prime"
+                android:elevation="10dp"
+                />
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mini"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="49dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_alignBottom="@+id/radioGroup"
+            android:id="@+id/textView3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sedan"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="167dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_alignBottom="@+id/radioGroup"
+            android:id="@+id/textView4" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prime"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="288dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_alignBottom="@+id/radioGroup"
+            android:id="@+id/textView5" />-->
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            fab:menu_icon="@drawable/car1"
+            fab:menu_animationDelayPerItem="0"
+            fab:menu_colorNormal="#0D47A1"
+            fab:menu_colorPressed="#0D47A1"
+            fab:menu_colorRipple="#536DFE"
+            fab:menu_labels_maxLines="2"
+            fab:menu_labels_ellipsize="end"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right">
+
+           <!-- <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/car_segment"
+                fab:fab_label="Sedan"
+                fab:fab_size="mini"
+                fab:fab_colorNormal="#0D47A1"
+                fab:fab_colorPressed="#0D47A1"
+                fab:fab_colorRipple="#536DFE"
+                />
+            <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/car_segment"
+            fab:fab_label="Mini"
+            fab:fab_size="mini"
+                fab:fab_colorNormal="#0D47A1"
+                fab:fab_colorPressed="#0D47A1"
+                fab:fab_colorRipple="#536DFE"
+
+            />
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/car_segment"
+                fab:fab_label="Prime"
+                fab:fab_size="mini"
+                fab:fab_colorNormal="#0D47A1"
+                fab:fab_colorPressed="#0D47A1"
+                fab:fab_colorRipple="#536DFE"
+                />-->
+
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Location"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/button"
+            android:layout_toRightOf="@+id/autoCompleteTextViewFrom"
+            android:layout_toEndOf="@+id/autoCompleteTextViewFrom" />
+
+        <AutoCompleteTextView
+               android:id="@+id/autoCompleteTextViewTo"
+               android:layout_width="240dp"
+               android:layout_height="30dp"
+               android:ems="10"
+               android:paddingLeft="5dp"
+               android:singleLine="true"
+               android:background="#fff"
+               android:focusable="false"
+               android:elevation="10dp"
+               android:hint="Please Enter Destination"
+               android:drawableRight="@android:drawable/ic_menu_close_clear_cancel"
+               android:layout_below="@+id/autoCompleteTextViewFrom"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true">
+           </AutoCompleteTextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewFrom"
+            android:layout_width="240dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:background="#fff"
+            android:elevation="10dp"
+            android:hint="Please Enter Source"
+            android:focusable="true"
+            android:drawableRight="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        </AutoCompleteTextView>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Service Avaliable in Your Area"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:id="@+id/noservice"
+        />
+
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

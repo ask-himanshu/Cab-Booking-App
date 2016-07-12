@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="one.prototype.aptlegion.limocart.createuser"
+   >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/createuser"
+   >
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+
+    />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Mobile No"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Email address (Username)"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:layout_below="@+id/editText5"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:ems="10"
+        android:id="@+id/editText7"
+        android:layout_below="@+id/editText6"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:ems="10"
+        android:id="@+id/editText8"
+        android:layout_below="@+id/editText7"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:ems="10"
+        android:id="@+id/Rescity"
+        android:layout_below="@+id/editText8"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sercitylable"
+        android:layout_below="@+id/Rescity"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:text="Service City"
+        />
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:ems="10"
+        android:id="@+id/city"
+        android:layout_below="@+id/sercitylable"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"/>
+
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="vehicletype"
+        android:ems="10"
+        android:id="@+id/vehicletype"
+        android:layout_below="@+id/city"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:hint="vehiclenumber"
+    android:ems="10"
+    android:id="@+id/editText10"
+    android:layout_below="@+id/vehicletype"
+    android:layout_marginTop="5dp"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="15dp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="licenseno"
+        android:ems="10"
+        android:id="@+id/editText11"
+        android:layout_below="@+id/editText10"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="300dp"
+        android:hint="Country"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText11"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:ems="10" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="@drawable/b"
+        android:id="@+id/button4"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/autoCompleteTextView1"
+        android:onClick="registeruser"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+       />
+
+</RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

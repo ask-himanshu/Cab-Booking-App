@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/guest_logout"
+        android:icon="@drawable/logout"
+        android:title="Log Out"/>
+    <item
+        android:id="@+id/guest_myrides"
+        android:title="My Rides"
+        android:icon="@drawable/steeringwheel"/>
+</menu>

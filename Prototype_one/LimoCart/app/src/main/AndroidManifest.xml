@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="one.prototype.aptlegion.limocart" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".GlobalVaraible"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splashscreen"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/fullscreenactivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainactivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/fullscreenactivity" >
+        </activity>
+        <activity
+            android:name=".adapter.Autocomplete"
+            android:label="@string/title_activity_autocomplete"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Createuser"
+            android:label="@string/title_activity_createuser"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <service
+            android:name=".Getdata"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".MyBookings"
+            android:label="@string/title_activity_my_bookings"
+            android:screenOrientation="portrait"
+            android:theme="@style/mybookings" >
+        </activity>
+        <activity
+            android:name=".Update_Profile"
+            android:label="@string/title_activity_update_profile"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".sample"
+            android:label="@string/title_activity_sample"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ErrorActivity"
+            android:label="@string/title_activity_error"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/fullscreenactivity" >
+        </activity>
+        <activity
+            android:name=".GPS_falil"
+            android:label="@string/title_activity_gps_falil"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/fullscreenactivity" >
+        </activity>
+        <activity
+            android:name=".Feedback"
+            android:label="@string/title_activity_feedback"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TrackDriver"
+            android:label="@string/title_activity_track_driver"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/fullscreenactivity" >
+        </activity>
+        <activity
+            android:name=".CardPage"
+            android:label="Card Info"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Paymentinfo"
+            android:label="Payment Info"
+            android:noHistory="true" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Wallet"
+            android:label="@string/title_activity_wallet"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LoadBalance"
+            android:label="@string/title_activity_load_balance"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PromotionsActivity"
+            android:label="Promotions"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GuestMain"
+            android:label="@string/title_activity_guest_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/mainactivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".GuestBookings"
+            android:label="@string/title_activity_my_bookings"
+            android:screenOrientation="portrait"
+            android:theme="@style/mybookings" >
+        </activity>
+
+        <activity
+            android:name=".ManagePaymentOption"
+            android:label="@string/title_activity_manage_payment_option"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DetailsBooking"
+            android:label="@string/title_activity_main2"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

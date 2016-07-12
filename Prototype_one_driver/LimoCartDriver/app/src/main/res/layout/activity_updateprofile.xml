@@ -1,0 +1,157 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="one.prototype.aptlegion.limocart.createuser"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/createuser"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp">
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="First Name"
+                    android:id="@+id/firstname"
+                    android:ems="10"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fname"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp">
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Last Name"
+                    android:ems="10"
+                    android:id="@+id/lastname"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+           <android.support.design.widget.TextInputLayout
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lname"
+                android:layout_marginLeft="20dp"
+                >
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textImeMultiLine"
+                    android:hint="Address"
+                    android:ems="10"
+                    android:id="@+id/ad"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ci"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp">
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="City"
+                    android:ems="10"
+                    android:id="@+id/city"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/Z"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ci"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp">
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:hint="ZIP"
+                android:ems="10"
+                android:id="@+id/zip"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="22dp"
+                android:layout_below="@+id/address"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+         </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/country"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Z"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp">
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView1"
+                    android:layout_width="150dp"
+                    android:hint="Country"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editText8"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:ems="10" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/password_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/country"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp">
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:ems="10"
+                android:id="@+id/pass"
+
+                />
+            </android.support.design.widget.TextInputLayout>
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Update"
+                 android:layout_below="@id/country"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginRight="40dp"
+                 android:background="@drawable/b"
+                 android:onClick="Update"
+                 android:textStyle="bold"
+                 android:textColor="?attr/colorPrimary"
+                 />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+
+

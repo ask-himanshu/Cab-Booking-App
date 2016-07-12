@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/navigation_item_1"
+            android:icon="@drawable/taxi"
+            android:title="Book a Cab"
+            />
+        <item
+            android:id="@+id/navigation_item_2"
+            android:title="My Rides"
+            android:icon="@drawable/steeringwheel"/>
+        <item
+            android:id="@+id/navigation_item_4"
+            android:title="My Profile"
+            android:icon="@drawable/openbookings"/>
+       <item
+        android:id="@+id/navigation_item_5"
+        android:icon="@drawable/wallet"
+        android:title="Wallet"/>
+    <item
+        android:id="@+id/navigation_item_6"
+        android:icon="@drawable/promotion"
+        android:title="Promotions"/>
+
+        <item
+            android:id="@+id/navigation_item_3"
+            android:icon="@drawable/logout"
+            android:title="Log Out"/>
+
+
+
+
+
+</menu>

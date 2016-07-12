@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Limo Cart Driver</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="username">Email Id</string>
+    <string name="password">Password</string>
+    <string name="forget"><i><u>forget password ?</u></i></string>
+    <string name="loginbutton">Login</string>
+    <string name="guest">Continue as Guest</string>
+    <string name="register">Sign Up</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="drawer_open">Drawer opened</string>
+    <string name="drawer_close">Drawer Closed</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_login">login</string>
+    <string name="title_activity_viewhistory">viewhistory</string>
+    <string name="title_activity_open_bookings">OpenBookings</string>
+    <string name="remeberme">Remember Me</string>
+    <string name="title_activity_autocomplete">Autocomplete</string>
+    <string name="title_activity_createuser">New User</string>
+    <string name="title_activity_trip">Trip</string>
+    <string name="title_activity_main_activity2">MainActivity2Activity</string>
+    <string name="title_activity_updateprofile">updateprofile</string>
+    <string name="title_activity_create_booking">CreateBooking</string>
+    <string name="title_activity_paymentinfo">Paymentinfo</string>
+    <string name="title_activity_card_page">CardPage</string>
+    <string name="title_activity_booking_details">BookingDetails</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item
+        type="id"
+        name="ad" />
+    <item
+        type="id"
+        name="ci" />
+    <item
+        type="id"
+        name="but" />
+    <item type="id"
+          name="zip"/>
+</resources>

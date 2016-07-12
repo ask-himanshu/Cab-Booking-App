@@ -1,0 +1,82 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="one.prototype.aptlegion.limocart.LoadBalance"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            >
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Amount"
+                android:layout_below="@+id/Paymentype"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ammount"
+                android:editable="false"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Cardtype"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/ammount"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Card No"
+                android:layout_below="@id/Cardtype"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/Cardno"
+                android:inputType="number"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Year Of Expiry"
+                android:layout_below="@+id/Cardno"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/Eyear"
+                android:inputType="number"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Month Of Expiry"
+                android:layout_below="@+id/Eyear"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/Emonth"
+                android:inputType="number"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="CVV"
+                android:layout_below="@+id/Emonth"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/Cvv"
+                android:inputType="number"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/PAY"
+                android:layout_below="@+id/Cvv"
+                android:text="Pay"
+
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+
